@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function QuestionForm(setQuestions) {
+function QuestionForm(handleAddQuestion) {
   const [formData, setFormData] = useState({
     prompt: "",
     answer1: "",
@@ -32,7 +32,7 @@ function QuestionForm(setQuestions) {
       }
     })
     .then(res => res.json())
-    .then(data => setQuestions(data))
+    .then(data => handleAddQuestion(data))
   }
 
   return (
