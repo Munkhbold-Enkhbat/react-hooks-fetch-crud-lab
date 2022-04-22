@@ -1,6 +1,7 @@
 import React from "react";
 
 function QuestionItem({ question }) {
+  console.log('Question from QuestionItem:', question);
   const { id, prompt, answers, correctIndex } = question;
 
   const options = answers.map((answer, index) => (
