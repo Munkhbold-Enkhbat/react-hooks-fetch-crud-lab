@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState }from "react";
 
 function QuestionForm(handleAddQuestion) {
   const [formData, setFormData] = useState({
@@ -22,7 +22,7 @@ function QuestionForm(handleAddQuestion) {
     const newQuestion = {
       propt: formData.prompt,
       answers: [formData.answer1, formData.answer2, formData.answer3, formData.answer4],
-      correctIndex: formData.correctIndex
+      correctIndex: parseInt(formData.correctIndex)
     }
     fetch("http://localhost:4000/questions", {
       method: "POST",
@@ -34,7 +34,6 @@ function QuestionForm(handleAddQuestion) {
     .then(res => res.json())
     .then(data => {
       console.log("Data from DB:", data);
-      handleAddQuestion(data)
     })
   }
 
