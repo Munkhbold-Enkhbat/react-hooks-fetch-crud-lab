@@ -20,7 +20,7 @@ function QuestionForm(handleAddQuestion) {
   function handleSubmit(event) {
     event.preventDefault();
     const newQuestion = {
-      propt: formData.prompt,
+      prompt: formData.prompt,
       answers: [formData.answer1, formData.answer2, formData.answer3, formData.answer4],
       correctIndex: parseInt(formData.correctIndex)
     }

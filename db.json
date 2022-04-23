@@ -65,6 +65,17 @@
         "controlled"
       ],
       "correctIndex": 1
+    },
+    {
+      "propt": "Who developed React?",
+      "answers": [
+        "Amazon",
+        "Google",
+        "I don't know",
+        "Facebook"
+      ],
+      "correctIndex": 3,
+      "id": 7
     }
   ]
 }
