@@ -67,13 +67,37 @@
       "correctIndex": 1
     },
     {
-      "prompt": "Who developed React?",
-      "answer1": "Amazon",
-      "answer2": "Google",
-      "answer3": "I don't know",
-      "answer4": "Facebook",
-      "correctIndex": 0,
+      "propt": "Who developed React?",
+      "answers": [
+        "Amazon",
+        "Google",
+        "I don't know",
+        "Facebook"
+      ],
+      "correctIndex": "3",
       "id": 7
+    },
+    {
+      "propt": "Who developed React?",
+      "answers": [
+        "Amazon",
+        "Google",
+        "I don't know",
+        "Facebook"
+      ],
+      "correctIndex": "3",
+      "id": 8
+    },
+    {
+      "propt": "Who developed React?",
+      "answers": [
+        "Amazon",
+        "Google",
+        "I don't know",
+        "Facebook"
+      ],
+      "correctIndex": "3",
+      "id": 9
     }
   ]
 }
